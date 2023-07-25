@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import WebDisplayReducer from '../reducers/WebDisplayReducer.js';
 import { decrementQuantity, incrementQuantity} from '../actions/changeQuantity';
 import { deleteCardAsync } from '../redux/thunks';
-import {updateCard, getCard} from '../actions/actionTypes';
+import {updateCard} from '../actions/actionTypes';
 
 
 const Card = ({ item, onDelete }) => {
@@ -29,9 +29,6 @@ const Card = ({ item, onDelete }) => {
      return null;
   }
 
-  const handleClick = () => {
-      dispatch(getCard());
-  };
 
 //  const handleUpdate = (e) => {
 //    e.preventDefault();
