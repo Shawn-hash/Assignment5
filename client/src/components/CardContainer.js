@@ -10,7 +10,7 @@ const CardContainer = () => {
   const [items, setItems] = useState([]);
 
   const fetchCards = () => {
-    fetch('http://localhost:3001/cards')
+    fetch('https://inventory-backend-y41k.onrender.com/cards')
       .then(response => response.json())
       .then(data => setItems(data));
   };

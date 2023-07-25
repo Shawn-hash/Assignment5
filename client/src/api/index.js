@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:3001/cards';
+const url = 'https://inventory-backend-y41k.onrender.com/cards';
 
 export const fetchCards = () => axios.get(url);
 export const createCard = (newCard) => axios.post(url, newCard);
